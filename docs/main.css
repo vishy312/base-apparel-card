@@ -57,6 +57,11 @@ article .main-content form button {
   position: relative;
   top: -50px;
   left: 270px;
+  cursor: pointer;
+}
+
+article .main-content form button:hover {
+  background: linear-gradient(135deg, #feecec, #f8b4b4);
 }
 
 article .main-content form .error {
@@ -68,5 +73,63 @@ article .main-content form .error {
 
 .desktop-hero {
   display: none;
+}
+
+@media (min-width: 975px) {
+  body {
+    width: 1440px;
+  }
+  body article {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body article .main-card {
+    width: 55%;
+  }
+  body article .main-card .logo {
+    margin-left: 8em;
+    margin-top: 5em;
+  }
+  body article .main-card .mobile-hero {
+    display: none;
+  }
+  body article .main-card .main-content {
+    padding: 2em 0 0 8em;
+    text-align: start;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body article .main-card .main-content h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
+  body article .main-card .main-content p {
+    text-align: left;
+    width: 60%;
+    line-height: 1.7;
+  }
+  body article .main-card .main-content form input {
+    width: 65%;
+  }
+  body article .main-card .main-content form button {
+    left: -70px;
+    width: 90px;
+    top: 4px;
+  }
+  body article .main-card .main-content form .error {
+    left: -200px;
+    top: 8px;
+  }
+  body article .desktop-hero {
+    display: block;
+    width: 45%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 /*# sourceMappingURL=main.css.map */

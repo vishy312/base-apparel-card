@@ -12,57 +12,118 @@ body {
 }
 
 article {
-    background: $btn-gradient2;
-    .mobile-hero {
-        margin: 1em 0 2em 0;
-        width: 100%;
+  background: $btn-gradient2;
+  .mobile-hero {
+    margin: 1em 0 2em 0;
+    width: 100%;
+  }
+  .main-content {
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: 0.3em;
+      span {
+        color: $paragraph-color;
+        font-weight: 300;
+      }
     }
-    .main-content {
-        h1{
-            text-align: center;
-            font-size: 2.5rem;
-            letter-spacing: 0.3em;
-            span {
-                color: $paragraph-color;
-                font-weight: 300;
-            }
-        }
-        p{
-            color: $paragraph-color;
-            text-align: center;
-            margin: 1.25em;
-        }
-        form {
-            margin: 1em 0 3em 0;
-            input {
-                width: 80%;
-                height: 50px;
-                border-radius: 35px;
-                padding-left: 1.5em;
-                box-sizing: border-box;
-                border: 1px solid $paragraph-color;
-                margin-left: 35px;
-            }
-            button {
-                width: 70px;
-                height: 50px;
-                border-radius: 25px;
-                background: $btn-gradient;
-                border: 1px solid transparent;
-                position: relative;
-                top: -50px;
-                left: 270px;
-            }
-            .error {
-                position: relative;
-                top: -47px;
-                left: 160px;
-                display: none;
-            }
-        }
+    p {
+      color: $paragraph-color;
+      text-align: center;
+      margin: 1.25em;
     }
+    form {
+      margin: 1em 0 3em 0;
+      input {
+        width: 80%;
+        height: 50px;
+        border-radius: 35px;
+        padding-left: 1.5em;
+        box-sizing: border-box;
+        border: 1px solid $paragraph-color;
+        margin-left: 35px;
+      }
+      button {
+        width: 70px;
+        height: 50px;
+        border-radius: 25px;
+        background: $btn-gradient;
+        border: 1px solid transparent;
+        position: relative;
+        top: -50px;
+        left: 270px;
+        cursor: pointer;
+      }
+      button:hover {
+          background: $btn-gradient3;
+      }
+      .error {
+        position: relative;
+        top: -47px;
+        left: 160px;
+        display: none;
+      }
+    }
+  }
 }
 
 .desktop-hero {
-    display: none;
+  display: none;
+}
+
+// media queries //
+
+@media (min-width: 975px) {
+  body {
+    width: 1440px;
+    article {
+      background-image: url(images/bg-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      display: flex;
+      .main-card {
+        width: 55%;
+        .logo {
+          margin-left: 8em;
+          margin-top: 5em;
+        }
+        .mobile-hero {
+          display: none;
+        }
+        .main-content {
+          padding: 2em 0 0 8em;
+          text-align: start;
+          box-sizing: border-box;
+          h1 {
+            font-size: 4rem;
+            text-align: left;
+          }
+          p {
+            text-align: left;
+            width: 60%;
+            line-height: 1.7;
+          }
+          form {
+            input {
+              width: 65%;
+            }
+            button {
+              left: -70px;
+              width: 90px;
+              top: 4px;
+            }
+            .error {
+                left: -200px;
+                top: 8px;
+            }
+          }
+        }
+      }
+      .desktop-hero {
+        display: block;
+        width: 45%;
+        height: fit-content;
+      }
+    }
+  }
 }
