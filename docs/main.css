@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 375px;
+  margin: auto;
+}
+
+article {
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+article .mobile-hero {
+  margin: 1em 0 2em 0;
+  width: 100%;
+}
+
+article .main-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.3em;
+}
+
+article .main-content h1 span {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+article .main-content p {
+  color: #ce9797;
+  text-align: center;
+  margin: 1.25em;
+}
+
+article .main-content form {
+  margin: 1em 0 3em 0;
+}
+
+article .main-content form input {
+  width: 80%;
+  height: 50px;
+  border-radius: 35px;
+  padding-left: 1.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ce9797;
+  margin-left: 35px;
+}
+
+article .main-content form button {
+  width: 70px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: 1px solid transparent;
+  position: relative;
+  top: -50px;
+  left: 270px;
+}
+
+article .main-content form .error {
+  position: relative;
+  top: -47px;
+  left: 160px;
+  display: none;
+}
+
+.desktop-hero {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

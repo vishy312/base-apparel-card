@@ -1,13 +1,68 @@
-@import 'config';
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 body {
-    font: {
-        family: 'Josefin Sans', sans-serif;
-        size: 16px;
-        weight: 400;
-    }
-    width: 375px;
-    margin: auto;
+  font: {
+    family: "Josefin Sans", sans-serif;
+    size: 16px;
+    weight: 400;
+  }
+  width: 375px;
+  margin: auto;
 }
 
+article {
+    background: $btn-gradient2;
+    .mobile-hero {
+        margin: 1em 0 2em 0;
+        width: 100%;
+    }
+    .main-content {
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 0.3em;
+            span {
+                color: $paragraph-color;
+                font-weight: 300;
+            }
+        }
+        p{
+            color: $paragraph-color;
+            text-align: center;
+            margin: 1.25em;
+        }
+        form {
+            margin: 1em 0 3em 0;
+            input {
+                width: 80%;
+                height: 50px;
+                border-radius: 35px;
+                padding-left: 1.5em;
+                box-sizing: border-box;
+                border: 1px solid $paragraph-color;
+                margin-left: 35px;
+            }
+            button {
+                width: 70px;
+                height: 50px;
+                border-radius: 25px;
+                background: $btn-gradient;
+                border: 1px solid transparent;
+                position: relative;
+                top: -50px;
+                left: 270px;
+            }
+            .error {
+                position: relative;
+                top: -47px;
+                left: 160px;
+                display: none;
+            }
+        }
+    }
+}
+
+.desktop-hero {
+    display: none;
+}
