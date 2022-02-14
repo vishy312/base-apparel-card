@@ -1,0 +1,13 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+    font: {
+        family: 'Josefin Sans', sans-serif;
+        size: 16px;
+        weight: 400;
+    }
+    width: 375px;
+    margin: auto;
+}
+
