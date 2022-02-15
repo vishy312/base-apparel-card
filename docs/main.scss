@@ -43,6 +43,7 @@ article {
         border: 1px solid $paragraph-color;
         margin-left: 35px;
       }
+
       button {
         width: 70px;
         height: 50px;
@@ -55,13 +56,16 @@ article {
         cursor: pointer;
       }
       button:hover {
-          background: $btn-gradient3;
+        background: $btn-gradient3;
       }
       .error {
         position: relative;
         top: -47px;
         left: 160px;
-        display: none;
+        visibility: hidden;
+      }
+      .show-error-icon {
+        visibility: visible;
       }
     }
   }
@@ -69,6 +73,22 @@ article {
 
 .desktop-hero {
   display: none;
+}
+
+.warn-states.err {
+  border: 1px solid $warning-border-color;
+}
+
+.dont-show {
+  visibility: hidden;
+}
+
+.show {
+  position: relative;
+  left: 60px;
+  top: -55px;
+  color: $warning-border-color;
+  visibility: visible;
 }
 
 // media queries //
@@ -113,8 +133,8 @@ article {
               top: 4px;
             }
             .error {
-                left: -200px;
-                top: 8px;
+              left: -200px;
+              top: 8px;
             }
           }
         }
@@ -125,5 +145,8 @@ article {
         height: fit-content;
       }
     }
+  }
+  .show {
+    top: -5px;
   }
 }

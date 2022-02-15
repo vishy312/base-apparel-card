@@ -68,11 +68,31 @@ article .main-content form .error {
   position: relative;
   top: -47px;
   left: 160px;
-  display: none;
+  visibility: hidden;
+}
+
+article .main-content form .show-error-icon {
+  visibility: visible;
 }
 
 .desktop-hero {
   display: none;
+}
+
+.warn-states.err {
+  border: 1px solid #f96262;
+}
+
+.dont-show {
+  visibility: hidden;
+}
+
+.show {
+  position: relative;
+  left: 60px;
+  top: -55px;
+  color: #f96262;
+  visibility: visible;
 }
 
 @media (min-width: 975px) {
@@ -130,6 +150,9 @@ article .main-content form .error {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .show {
+    top: -5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
